@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/b45ea67235.js" crossorigin="anonymous"></script>
+    <title>weather.</title>
+
+</head>
+
+<body>
+    <!-- search bar -->
+    <section class="search">
+        <form>
+            <input type="text" placeholder="Search for a city" autofocus>
+            <button type="submit"> <i class="fas fa-search"></i></button>
+            <br>
+            <span id=error-msg></span>
+        </form>
+    </section>
+
+    <!-- API Data -->
+    <section class="api-data">
+        <!-- current weather -->
+        <section class="current-weather">
+            <div class="location-temp">
+                <h1 id="city-name"></h1>
+                <h2 id="temp"> </h2>
+            </div>
+
+            <div class="temperature">
+                <div class="temperature-degree-section">
+                    <p id="icon"></p>
+                </div>
+                <p id="temp-feels"></p>
+            </div>
+
+            <p id="twilight-time"></p>
+
+        </section>
+
+    </section>
+
+    <!-- Footer -->
+    <section class="made-by">
+        <p>&#9889 made with &#128153 by lauren </p>
+    </section>
+
+    <section class="about">
+        <a href="https://github.com/laurenyoshida">github</a>
+    </section>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
